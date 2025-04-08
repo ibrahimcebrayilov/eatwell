@@ -1,0 +1,390 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
+    &.transparent {
+      background-color: transparent;
+      color: white;
+    }
+  
+    &.dark-bg {
+      background-color: #000;
+      color: white;
+    }
+  
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+      padding-top: 10px;
+      margin: 0 auto;
+      padding-left: 30px;
+  
+      nav {
+        display: flex;
+  
+        ul {
+          display: flex;
+          gap: 50px;
+  
+          li {
+            list-style: none;
+  
+            a {
+              font-family: "Marcellus", serif;
+              font-weight: 300;
+              font-style: normal;
+              text-decoration: none;
+              text-transform: uppercase;
+              color: rgb(255, 255, 255);
+              font-size: 15px;
+            }
+          }
+        }
+      }
+  
+      .eatwel {
+        h1 {
+          font-family: "Marcellus", serif;
+          font-weight: 300;
+          font-style: normal;
+          color: rgb(255, 255, 255);
+          text-transform: uppercase;
+          font-size: 32px;
+  
+  
+        }
+      }
+    }
+  }
+  
+  .contanier {
+    width: 100%;
+    height: 95vh;
+    background-image: url(https://preview.colorlib.com/theme/eatwell/images/bg_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .textBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 30vh;
+      gap: 5vh;
+  
+      button {
+        width: 200px;
+        height: 50px;
+        background-color: inherit;
+        color: rgb(255, 255, 255);
+        border: 2px solid;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+  
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings:
+  
+          "wdth" 100;
+  
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+  
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 20px;
+        font-weight: weight;
+        color: rgba(255, 255, 255, 0.7);
+        font-style: normal;
+        font-variation-settings:
+  
+          "wdth" 100;
+        color: rgb(255, 255, 255);
+      }
+  
+      h1 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 75px;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+        color: rgb(255, 255, 255);
+      }
+  
+    }
+  }
+  
+  .about-section {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    margin: 0 auto;
+  
+    .text-content {
+      width: 50%;
+      height: 50%;
+      padding: 0 px 30px;
+      margin: 0px 30px;
+  
+      h5 {
+        letter-spacing: 2px;
+        color: gray;
+        text-transform: uppercase;
+        font-family: "Marcellus", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 23px;
+      }
+  
+      h1 {
+        font-size: 62px;
+        margin-bottom: 20px;
+        font-family: "Marcellus", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(0, 0, 0);
+      }
+  
+      p {
+        color:
+          rgb(184, 184, 184);
+        line-height: 1.6;
+        margin-bottom: 20px;
+  
+        font-family: "Marcellus", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+  
+      button {
+        width: 250px;
+        height: 55px;
+        padding: 10px 20px;
+        border: 1px solid #aaa;
+        background-color: white;
+        font-weight: 30px;
+        font-size: 16px;
+        color:
+          rgb(184, 184, 184);
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+  
+        &:hover {
+          background-color: #333;
+          color:
+            rgb(184, 184, 184);
+          font-weight: 30px;
+        }
+      }
+    }
+  
+    .image-content {
+      width: 40%;
+  
+      img {
+        width: 100%;
+        height: auto;
+  
+        max-width: 500px;
+      }
+    }
+  }
+  
+  .offer-section {
+    background-color: #f6fdfd;
+    padding: 80px 40px;
+    text-align: center;
+  
+    .offer-header {
+      margin-bottom: 50px;
+  
+      h2 {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: "Marcellus", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+  
+      p {
+        color: #999;
+        font-size: 22px;
+        margin-top: 10px;
+        font-family: "Marcellus", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
+  
+    .offer-cards {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+  
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        width: 400px;
+  
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+  
+        .card-content {
+          padding: 20px;
+  
+          .price {
+            color: orange;
+            font-weight: bold;
+            font-size: 18px;
+          }
+  
+          h3 {
+            margin: 10px 0;
+            font-size: 20px;
+          }
+  
+          p {
+            font-size: 14px;
+            color: #b9b5b5;
+            margin-bottom: 20px;
+          }
+  
+          button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+  
+            &:hover {
+              background-color: rgb(187, 104, 3);
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .gallery-section {
+    width: 100%;
+    text-align: center;
+  
+    .gallery-header {
+      margin-bottom: 50px;
+  
+      h2 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+  
+      p {
+        color: #999;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+  
+    .gallery-grid {
+      width: 100%;
+      justify-content: center;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 20px;
+      gap: 15px;
+  
+      .cardImg {
+        display: flex;
+  
+        img {
+          width: 75%;
+  
+          &:hover {
+            transform: scale(1.1);
+            transition: 0.7s;
+          }
+        }
+      }
+  
+  
+    }
+  }
+  
+  
+  
+  
+  
+  @media screen and (min-width:300px) and (max-width:700px) {
+    .header {
+      width: 100%;
+  
+      .head {
+        nav {
+          ul {
+            display: none;
+          }
+        }
+      }
+    }
+  
+    .contanier {
+      width: 100%;
+  
+      .textBox {
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  
+    .gallery-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      padding-left: 40px;
+    }
+  
+    .about-section{
+      width: 100%;
+      display: flex;
+      flex-direction: column ;
+      .text-content{
+        font-size: 20px;
+      }
+    }
+  }
